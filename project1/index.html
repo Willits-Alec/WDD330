@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Contact US</h1>
+    </header>
+
+</body>
+<main>
+    <form>
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="name" name="fullname" required>
+        </div>
+        <div>
+            <label for="emmail">Email:</label>
+            <input type="email" id="email" name="email" placeholder="user@email.com" required>
+        </div>
+        <div class="Message">
+            <h5>Mesage</h5>
+            <textarea name="Mesage" id="commentst" cols="20" rows="5"></textarea>
+        </div>
+    
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+
+</main>
+<footer>
+    <script>
+        var name = document.getElementById("name");
+    </script>
+</footer>
+</html>
