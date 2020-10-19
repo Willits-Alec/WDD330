@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Luckiest+Guy|Nunito|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+h1 {
+    color: rgb(213, 250, 2);
+    background-color: #005073;
+    border-radius: 25px 25px 5px 5px;
+    width: 70%;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 4em;
+    padding: 10px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch|Luckiest+Guy|Nunito|Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+
+html {
+    height: 100%;
+}
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 25px 25px 5px 5px;
+    height: 100vh;
+}
+
+#name {
+    background-color: #005073;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#portrait {
+    vertical-align: middle;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: -100px;
+    box-shadow: black 2px 2px 4px;
+}
+
+h1 {
+    color: rgb(213, 250, 2);
+    width: 70%;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 4em;
+    padding: 10px;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+nav a {
+    font-family: 'Indie Flower', cursive;
+    color: rgba(216, 16, 16, 0.753);
+    text-decoration: none;
+    margin: 0 10px;
+
+}
+
+nav li {
+    padding-left: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.45em;
+}
+
+nav a:hover {
+    background-color: rgb(213, 250, 2);
+    color: #ff4000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+footer {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(213, 250, 2);
+    border-radius: 5px;
+    background-color: #005073;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 940px;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.075);
+    margin: 0px;
+}
+
+.socialmedia {
+    color: rgb(213, 250, 2);
+}
+
+img {
+    max-width: 25%;
+}
