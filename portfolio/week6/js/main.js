@@ -1,10 +1,25 @@
-function save(){
-    var saveTodo=document.getElementById('textfield').value;
-    localStorage.setItem("text", saveTodo);
+import { qs } from './util.js';
+
+  const listTodo = new Todo("#todoList", "todos");
+  
+
+  let Button = qs('#addButton');
+  Button.addEventListener('click', addButton);
+qs('body').addEventListener("onload", listTodo.displayAllTodos(listTodo.key));
+
+    function saveBtn() {
+        const inputelement = qs('#doit').value;
+
+        listTodo.addNewTodo(inputelement, listTodo.key);
+        listTodo.displayAllTodos(listTodo.key);
+        qs('#doit').value = "";
     }
 
-function saveFile() {
-    const todo = document.getElementById('txtTodo');
+    import Todo from "./todo.js";
 
-    let data = todo.data;
-}
+
+
+    // Store
+    localStorage.setItem("lastname", "Willits");
+    // Retrieve
+    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
