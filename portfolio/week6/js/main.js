@@ -16,10 +16,3 @@ qs('body').addEventListener("onload", listTodo.displayAllTodos(listTodo.key));
     }
 
     import Todo from "./todo.js";
-
-
-
-    // Store
-    localStorage.setItem("lastname", "Willits");
-    // Retrieve
-    document.getElementById("result").innerHTML = localStorage.getItem("lastname");
