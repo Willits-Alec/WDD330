@@ -10,5 +10,76 @@
 <body>
     <ul id="listElement"></ul>
     <section id="detailsElement"></section>
+
+    <p>
+        Scaling<br>
+        The scale(x,y) function scales an element by the defined factors horizontally then vertically. If only one value is provided, it will be used for both the x and y values, growing or shrinking your element or pseudo-element while maintaining the original aspect ratio.
+    </p>
+    <p>
+        A scaled element will grow outwards from or shrink inwards towards its center; in other words, the element’s center will stay in the same place as its dimensions change. To change this default behavior, you can include the transform-origin property, which we’ll be covering a bit later.
+    </p>
+    <p>
+        Rotation<br>
+        The rotate() function rotates an element around the point of origin by a specified angle value. As with scale , by default the point of origin is the element’s center.
+    </p>
+    <p>
+        Skew<br>
+        The skew(x,y) function specifies a skew along the x and y axes
+    </p>
+    <p>
+        The transition-duration property sets how long the transition will take: the duration of time it takes to go from the default state to the transitioned state. You can specify this either in seconds ( s ) or milliseconds ( ms ). We’d like our animation to be fairly quick, so we’ll specify 0.2 seconds ( 0.2s ), or 200 milliseconds ( 200ms ):
+    </p>
+    <p>
+        The transition Shorthand Property<br>
+        With four transition properties and a vendor prefix, you could wind up with eight lines of CSS for a single transition. Fortunately, as with other properties such as border , there’s a shorthand available.
+    </p>
+    <p>
+        Transitions animate elements over time; however, they’re limited in what they can do. You can define starting and ending states, but there’s no fine-grained control over any intermediate states.
+    </p>
+    <p>
+        Keyframes<br>
+        To animate an element in CSS, you first create a named animation, then attach it to an element in that element’s property declaration block. Animations in themselves don’t do anything; in order to animate an element, you’ll need to associate the animation with that element.
+    </p>
+    <h1>Chapter 12</h1>
+    <p>
+        Drawing on the Canvas<br>
+        ll drawing on the canvas happens via the Canvas JavaScript API. In this chapter, we’ll walk you through several different things you can draw onto the canvas element. Each example will have a new function, and all of these different functions live in a file called canvas.js.
+    </p>
+    <p>
+        Variations on fillStyle<br>
+        Instead of a color as our fillStyle , we could have used a CanvasGradient or a CanvasPattern object. Let’s create a pattern on the second canvas element (whose ID is demo2 ) on the canvas.html page.
+    </p>
+    <p>
+        function drawPattern() {
+            …
+            var img = new Image();
+            img.src = "../images/bg-bike.png";
+            img.onload = function() {
+            var pattern = context.createPattern(img, "repeat"); 
+            context.fillStyle = pattern;                        
+            context.fillRect(10, 10, 100, 100);                  
+            context.strokeRect(10, 10, 100, 100);             
+            };
+        }
+    </p>
+    <p>
+        Anonymous Functions<br>
+        You may be asking yourself, “what is that function statement that comes right before the call to img.onload ?” It’s ananonymous function. Anonymous functions are much like regular functions except, as you might guess, they are without names.
+    </p>
+    <p>
+        Saving Canvas Drawings<br>
+        If we create an image programmatically using the Canvas API, but decide we’d like to have a local copy of our drawing, we can use the API’s toDataURL method to save our drawing. toDataURL creates a URL with the image in it, (either a png or jpg, whichever is specified). You can then right-click the image at this URL, and save it as a PNG or JPEG.
+    </p>
+    <p>
+        Manipulating Images<br>
+        Redrawing an image element from the page onto a canvas is fairly unexciting. It’s really no different from using an img element. Where it does become interesting is how we can manipulate an image after we’ve drawn it into the canvas .
+    </p>
+    <p>
+        Displaying Text on the Canvas<br>
+        If we were to viewThe HTML5 Heraldfrom a file on a computer, we’d encounter security errors in Firefox and Chrome when trying to manipulate an entire video, as we did with a simple image. We can add a bit of error-checking in order to make our video work anyway, whether or not we view it from our local machine in Chrome or Firefox.
+    </p>
+    <p>
+    
+    </p>
 </body>
 </html>
